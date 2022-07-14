@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
         <title>Add Task in Mobile taskbar</title>
     </head>
     <body>
         <div class="addNewTask">
-            <h1>Add New Task</h1>
+            <h3>Add New Task</h3>
             <div class="title">
                 <input
                     type="text"
-                    class="title"
+                    class="titleInp"
                     placeholder="Enter the title"
                 />
             </div>
-            <div class="icon">
-                <input type="text" class="icon" placeholder="Enter icon" />
+            <div class="iconInput">
+                <input type="text" class="iconInpu" placeholder="Enter icon" />
             </div>
-            <div class="add-btn">
-                <button>Add</button>
+            <div class="btnCon">
+                <button class="addBtn">Add</button>
             </div>
             <div class="mobiTask">
-                <h1>Mobile Taskbar</h1>
-                <div class="table">
-                    <table>
+                <h1 class="mobT">Mobile Taskbar</h1>
+                <div class="tableContainer">
+                    <table class="table">
                         <tr>
-                            <td>wi-fi</td>
-                            <td>Brightness</td>
-                            <td>start call</td>
+                            <td>
+                                <h3 class="icon">&#9729 </h3>
+                                <p class="text">wi-fi</p>
+                            </td>
+                            <td>
+                                <h3 class="icon">&#9728</h3>
+                               <p class="text">Brightness</p> 
+
+                            </td>
+                            <td>
+                                <h3 class="icon">&#9990</h3>
+                                <p class="text">start call</p>
+                            </td>
                         </tr>
                         <tr>
-                            <td>Nightmode</td>
-                            <td>hotspot</td>
-                            <td>music</td>
+                            <td>
+                                <h3 class="icon">&#9789</h3>
+                                <p class="text">Nightmode</p>
+                            </td>
+                            <td>
+                                <h3 class="icon">&#9737</h3>
+                               <p class="text">hotspot</p> 
+                            </td>
+                            <td >
+                                <h3 class="icon">&#9834</h3>
+                                   <p class="text">music</p> 
+                            </td>
                         </tr>
                     </table>
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
