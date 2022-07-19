@@ -1,33 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .addNewTask {
     width: 900px;
     margin: 20px auto;
     border: 0px solid red;
 }
-.tableContainer {
-    width: 350px;
-    border: 0px solid blue;
+.mainContainer {
+    flex-direction: row;
+    justify-content: space-between;
 }
-td {
+.container {
+    display: flex;
+    width: 33%;
+}
+
+.box {
     width: 100px;
-    height: 80px;
+    height: 100px;
     text-align: center;
     border: 1px solid white;
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
     background-color: lightcoral;
-    padding: 5px;
+    padding: 2px;
+    margin: 5px;
 }
 .addBtn {
     width: 355px;
     height: 30px;
 }
 .icon {
-    width: 90px;
+    width: 80px;
     height: 60px;
     color: white;
     border-radius: 50%;
     background-color: gray;
-
-    padding-top: 30px;
+    padding: 10px;
 }
 .titleInp {
     width: 350px;
