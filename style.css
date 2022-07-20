@@ -10,17 +10,17 @@
     border: 0px solid red;
 }
 .mainContainer {
-    flex-direction: row;
-    justify-content: space-between;
-}
-.container {
-    display: flex;
     width: 33%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
 }
 
 .box {
-    width: 100px;
+    /* width: 100px; */
     height: 100px;
+    flex: 1 0 0;
     text-align: center;
     border: 1px solid white;
     /* border-collapse: collapse; */
